@@ -14,5 +14,13 @@ export const typeOrmConfig: TypeOrmModuleAsyncOptions = {
     autoLoadEntities: true,
     logging: true,
     synchronize: true,
+
+    
+    extra: {
+      ssl: {
+        rejectUnauthorized: false,
+      },
+    },
+    
   }),
 };
